@@ -1,0 +1,48 @@
+#mainDebtorArea{
+	
+}
+#mainDebtorArea #debtorTop{
+	width:1000px;
+	height:300px;
+	
+}
+
+#mainDebtorArea #debtorTop  #boxDebtorL{
+	width:318px;
+	height:300px;
+	margin:3px;
+	float:left;
+	padding:3px;
+}
+#mainDebtorArea #debtorTop  #boxDebtorR{
+	width:645px;
+	height:300px;
+	margin:3px;
+	float:left;
+	padding:3px;
+}
+#mainDebtorArea #debtorCenter{
+	width:1000px;
+	height:300px;
+
+}
+#mainDebtorArea #debtorCenter .boxDebtor{
+	width:318px;
+	height:300px;
+	padding:3px;
+	margin:3px;
+	float:left;
+}
+#mainDebtorArea #debtorBottom{
+	width:1000px;
+	height:300px;
+	
+	float:left;
+}
+#mainDebtorArea #debtorBottom .boxDebtorBottom{
+	width:483px;
+	height:300px;
+	margin:3px;
+	padding:3px;
+	float:left;
+}
