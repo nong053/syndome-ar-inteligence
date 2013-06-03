@@ -1,0 +1,33 @@
+#mainBRPayment{
+	
+}
+#mainBRPayment #areaGrid{
+width:1000px;
+height:330px;
+/*border:1px solid #cccccc;		*/
+}
+#mainBRPayment #areaGrid .box{
+float:left;
+width:490px;
+height:320px;
+margin:2px;
+/*border:1px solid #cccccc;	*/
+}
+#mainBRPayment #areaGraph{
+width:1000px;
+height:auto;
+/*border:1px solid #cccccc;	*/
+}
+#mainBRPayment #areaGraph .box{
+
+float:left;
+width:490px;
+height:320px;
+border:1px solid #cccccc;
+margin:2px;
+
+}
+.lableTitle{
+	font-weight:bold;
+	padding-left:10px;
+}
