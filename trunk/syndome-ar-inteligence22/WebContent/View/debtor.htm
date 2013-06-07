@@ -1,0 +1,95 @@
+<script src="../Controller/debtor.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<div id="mainDebtorArea">
+	<div id="debtorTop">
+		<div id="boxDebtorL">
+			<div class="lableTitle">AR Ratio</div>
+			<div>
+				<table id="ratio" border="0" width="100%" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>ส่วนลอยอดหนี้ต่อยอดขาย</td>
+						<td width="10"><div class="sparkline"></div></td>
+					</tr>
+					<tr>
+						<td>ส่วนลดหนี้เสียต่อยอดขาย</td>
+						<td><div class="sparkline"></td>
+					</tr>
+					<tr>
+						<td>สัดส่วนหนี้เสียต่อยอดขาย</td>
+						<td><div class="sparkline"></td>
+					</tr>
+					<tr>
+						<td>ยอดหนี้ยังไม่ถึงกำหนดเทียบยอดหนี้</td>
+						<td><div class="sparkline"></td>
+					</tr>
+					<tr>
+						<td>
+						<font color="">สัดส่วนหนี้ตามประเภท</font><br>
+						<font color="green">ปกติ(1-60)</font><br>
+						<font color="yellow">เฝ้าระวัง(61-90)</font><br>
+						<font color="red">ความเสี่ยงสูง(91+)</font><br>
+						<font color="blue">สงสัยจะสูญ</font><br>
+						</td>
+						<td><div class="sparkline"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="boxDebtorR">
+			<div id="gridDebtorArea">
+			<!-- Table Grid Start -->
+			<div class="lableTitle">สรุปการชำระหนี้</div>
+			<table id="gridDebtor">
+			  <thead>
+			      <tr>
+					  
+					  <!-- <th class="k-hierarchy-cell k-header">&nbsp;</th>-->
+			          <th data-field="Field1" ><center><b>วันที่</b></center></th>
+					  <th data-field="Field2"><center><b>ผู้รับผิดชอบ</b></center></th>	 
+					  <th data-field="Field3"><center><b>จำนวนใบวางบิล<br>ที่ต้องไปวางบิล</b></center></th>
+					  <th data-field="Field4"><center><b>จำนวนใบวางบิล<br>ที่วางบิลไม่ได้</b></center></th>
+					 
+			
+				  </tr>
+			  </thead>
+			  <tbody>
+			      <tr>
+			      
+			          <td></td>
+			          <td></td>
+					  <td></td>
+			          <td></td>
+					  <td></td>
+					  
+				</tr>
+			
+			  </tbody>
+			 </table>
+			 <!-- Table Grid End -->
+			</div>
+		</div>
+	</div>
+	<div id="debtorCenter">
+		<div class="boxDebtor">
+			<div id="graphDebtor1"></div>
+		</div>
+		<div class="boxDebtor">
+			<div id="graphDebtor2"></div>
+		</div>
+		<div class="boxDebtor">
+			<div id="graphDebtor3"></div>
+		</div>
+
+		
+	</div>
+	<div id="debtorBottom">
+		<div class="boxDebtorBottom">
+			<div id="graphDebtor4"></div>
+		</div>
+		<div class="boxDebtorBottom">
+			<div id="graphDebtor5"></div>
+		</div>
+	</div>
+	<br style="clear:both">
+</div>
+<br style="clear:both">

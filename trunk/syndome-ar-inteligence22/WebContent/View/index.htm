@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AR Intelligence-Syndome</title>
+<link href="../styles/index.css" rel="stylesheet">
+<link href="../styles/debtor.css" rel="stylesheet">
+<link href="../styles/billingAndReceivePayment.css" rel="stylesheet">
+
+<link href="../styles/jquery.shadow.css" rel="stylesheet">
+<link href="../styles/kendo.common.min.css" rel="stylesheet">
+<link href="../styles/kendo.default.min.css" rel="stylesheet">
+<link href="../jqueryUI/css/cupertino/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+<link href="../styles/kendo.dataviz.min.css" rel="stylesheet">
+
+	<!-- jq plot css start -->
+	<link type="text/css" rel="stylesheet" href="../dist/jquery.jqplot.min.css" />
+	<link type="text/css" rel="stylesheet" href="../syntaxhighlighter/styles/shCoreDefault.min.css" />
+	<link type="text/css" rel="stylesheet" href="../syntaxhighlighter/styles/shThemejqPlot.min.css" />
+	<!-- jq plot css end -->
+	<script src="../js/jquery.min.js"></script>
+	<!-- jq plot javascript start -->
+	<script language="javascript" type="text/javascript" src="../dist/excanvas.js"></script>
+	<script type="text/javascript" src="../dist/jquery.jqplot.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../dist/plugins/jqplot.highlighter.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../dist/plugins/jqplot.barRenderer.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../dist/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../dist/plugins/jqplot.pointLabels.min.js"></script>
+	<!-- jq plot javascript end -->
+
+
+<script src="../js/jquery.corner.js"></script>
+<script type="text/javascript" src="../js/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="../js/kendo.all.min.js" type="text/javascript"></script>
+<script src="../js/kendo.dataviz.min.js" type="text/javascript"></script>
+<script src="../js/jquery-ui-1.8.21.custom.min.js"  type="text/javascript"></script>
+<script src="../js/kendo.dataviz.min.js" type="text/javascript"></script>
+<script src="../js/jquery.shadow.js"></script>
+<script src="../Controller/main.js"></script>
+
+
+
+
+
+
+</head>
+<body>
+	<div id="mainContent">
+		<div id="header">
+			<div class="headerL">
+			<table width="500">
+				<tr>
+					<td>
+						<div class="txtHeader">
+						ปี
+						</div>
+					</td>
+					<td>
+					<select id="paramYear" class="list">
+						<option>2011</option>
+						<option>2012</option>
+						<option>2013</option>
+					</select>
+					</td>
+				
+					<td>
+						<div class="txtHeader">
+						เดือน
+						</div>
+					</td>
+					<td>
+					<select id="paramMonth" class="list">
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+					</select>
+					</td>
+					<td>
+					<button id="submit" class="k-button">&nbsp;OK&nbsp;</button>
+					</td>
+				</tr>
+				
+			</table>
+			</div>
+			<div class="headerR">
+				<div class="txtHeader">
+				AR Dashboard
+				</div>
+			</div>
+			<br style="clear:both">
+		</div>
+		
+		<div id="content">
+		
+			<div id="tabs">
+				<ul>
+				<li><a href="#tabs-1">วางบิลและรับชำระหนี้</a></li>
+				<li><a href="#tabs-2">ลูกหนี้</a></li>
+				
+				</ul>
+				<div id="tabs-1"></div>
+				<div id="tabs-2"></div>
+				
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
