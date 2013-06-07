@@ -1,0 +1,53 @@
+*{
+	font-family:Tahoma;
+	font-size:13px;
+	}
+body{
+	margin:0px;
+	padding:0px;
+	
+
+}
+#mainContent{
+	width:1000px;
+	height:auto;
+	margin:auto;
+	
+}
+#mainContent #header{
+	border: 1px solid #dedede;
+	background-color:#008EC3;
+	width:1000px;
+	border-radius:5px;
+	margin-bottom:5px;
+	
+}
+#mainContent #header .headerL{
+	padding-left:10px;
+	width:600px;
+	float:left;
+	
+}
+#mainContent #header .headerR{
+	padding-left:10px;
+	width:200px;
+	float:right;
+	text-align:right;
+	color:white;
+	font-weight:bold;
+}
+
+#mainContent #content{
+
+	width:1000px;
+	height:auto;
+}
+.txtHeader{
+	color:white;
+	font-weight:bold;
+	padding:5px;
+	margin-top: 2px;
+}
+#content{
+	display:none;
+}
