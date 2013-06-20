@@ -14,5 +14,6 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/gson-library"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/json_libraries"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

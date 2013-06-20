@@ -52,5 +52,28 @@ $(document).ready(function(){
 		clickTab1();
 	});
 	
-	
+	function cerateParameter(){
+		$.ajax({ //call Year 
+			url:"../Model/parameter.jsp",
+			type:"get",
+			dataType:"html",
+			data:{"request":"paramYear"},
+			success:function(data){
+				$("#yearArea").html(data);
+				$("#paramYear").kendoDropDownList();
+			}
+		});
+		
+		$.ajax({ //call Month
+			url:"../Model/parameter.jsp",
+			type:"get",
+			dataType:"html",
+			data:{"request":"paramMonth"},
+			success:function(data){
+				$("#monthArea").html(data);
+				$("#paramMonth").kendoDropDownList();
+			}
+		});
+	}
+	cerateParameter();
 });
