@@ -25,7 +25,8 @@ public class syndomeService {
   String ProvinceHTML="";
   String AreaHTML="";
   String FormatHTML="";
-  String optionBranch="";
+  String optionYear="";
+  String optionMonth="";
   
   
   public void init2() {
@@ -46,7 +47,7 @@ public class syndomeService {
 	            Statement stmt = conn.createStatement();
 	            ResultSet rst = 
 	                stmt.executeQuery(
-	                  "select * from user_level");
+	                  "select * from ar_invoice");
 	            while(rst.next()) {
 	               data1+=rst.getString(4);
 	              // data2+=rst.getString("LocationType");
@@ -647,8 +648,8 @@ public class syndomeService {
 	    }
 	 }
   
-  //optionBranch
-  public void setOptionBranch(String query) {
+  //optionYear
+  public void setOptionYear(String query) {
 
 	    try{
 	      Context ctx = new InitialContext();
@@ -666,12 +667,46 @@ public class syndomeService {
 	        	
 	            Statement stmt = conn.createStatement();
 	            ResultSet rst = stmt.executeQuery(query);
-	            optionBranch="";
-	            optionBranch+="<select class=\"listSelect1\" id=\"branch\">";
+	            optionYear="";
+	            optionYear+="<select class=\"listSelect\" id=\"paramYear\">";
 	            while(rst.next()){
-	           	 optionBranch+="<option value='"+rst.getString(1)+"'>"+rst.getString(2)+"</option>";
+	            	optionYear+="<option value='"+rst.getString(1)+"'>"+rst.getString(1)+"</option>";
 	            }
-	            optionBranch+="</select>";
+	            optionYear+="</select>";
+	            
+	            conn.close();
+	        }
+	      }
+	    }catch(Exception e) {
+	      e.printStackTrace();
+	    }
+	 }
+  
+  //optionMonth
+  public void setOptionMonth(String query) {
+
+	    try{
+	      Context ctx = new InitialContext();
+	      if(ctx == null ) 
+	          throw new Exception("Boom - No Context");
+
+	      DataSource ds = 
+	            (DataSource)ctx.lookup(
+	               "java:comp/env/jdbc/jndiDB");
+
+	      if (ds != null) {
+	        Connection conn = ds.getConnection();
+	              
+	        if(conn != null)  {
+	        	
+	            Statement stmt = conn.createStatement();
+	            ResultSet rst = stmt.executeQuery(query);
+	            optionMonth="";
+	            optionMonth+="<select class=\"listSelect\" id=\"paramMonth\">";
+	            while(rst.next()){
+	            	optionMonth+="<option value='"+rst.getString(1)+"'>"+rst.getString(2)+"</option>";
+	            }
+	            optionMonth+="</select>";
 	            
 	            conn.close();
 	        }
@@ -694,7 +729,8 @@ public String getdata1() { return data1;}
  public String getProvinceHTML() { return ProvinceHTML;}
  public String getAreaHTML() { return AreaHTML;}
  public String getFormatHTML() { return FormatHTML;}
- public String getOptionBranch() { return optionBranch;}
+ public String getOptionYear() { return optionYear;}
+ public String getOptionMonth() { return optionMonth;}
  public Object getData() { return dataObject;}
 
 }
