@@ -1,0 +1,1 @@
+syndome-ar-inteligence
